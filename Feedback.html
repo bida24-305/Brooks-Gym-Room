@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Brooks Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Brooks<span>Gym</span></div>
+                <div class="mobile-menu">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Feedback Content -->
+    <main>
+        <section class="feedback-header">
+            <div class="container">
+                <h1>Your Feedback Matters</h1>
+                <p>Help us improve Brooks Gym by sharing your experience. We value your opinion and use your feedback to enhance our services and facilities.</p>
+            </div>
+        </section>
+        
+        <div class="container">
+            <div class="feedback-container">
+                <form class="feedback-form" id="feedbackForm">
+                    <h2>Share Your Experience</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name (Optional)</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address (Optional)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="member-type">You are a:</label>
+                        <select id="member-type" name="member-type">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="member">Current Member</option>
+                            <option value="former-member">Former Member</option>
+                            <option value="visitor">Visitor/Prospective Member</option>
+                            <option value="trainer">Trainer/Staff</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Overall Rating -->
+                    <div class="rating-section">
+                        <h3>Overall Satisfaction</h3>
+                        <div class="rating-container">
+                            <label class="rating-option">
+                                <input type="radio" name="overall-rating" value="1">
+                                <div class="rating-circle">1</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="overall-rating" value="2">
+                                <div class="rating-circle">2</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="overall-rating" value="3">
+                                <div class="rating-circle">3</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="overall-rating" value="4">
+                                <div class="rating-circle">4</div>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="overall-rating" value="5">
+                                <div class="rating-circle">5</div>
+                            </label>
+                        </div>
+                        <div class="rating-labels">
+                            <span>Poor</span>
+                            <span>Excellent</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Facility Ratings -->
+                    <div class="facility-ratings">
+                        <h3 style="color: #ff6b6b; margin-bottom: 20px; text-align: center;">Rate Our Facilities</h3>
+                        
+                        <div class="facility-item">
+                            <label>Equipment Quality</label>
+                            <div class="star-rating">
+                                <input id="equip-5" type="radio" name="equipment-rating" value="5">
+                                <label for="equip-5">★</label>
+                                <input id="equip-4" type="radio" name="equipment-rating" value="4">
+                                <label for="equip-4">★</label>
+                                <input id="equip-3" type="radio" name="equipment-rating" value="3">
+                                <label for="equip-3">★</label>
+                                <input id="equip-2" type="radio" name="equipment-rating" value="2">
+                                <label for="equip-2">★</label>
+                                <input id="equip-1" type="radio" name="equipment-rating" value="1">
+                                <label for="equip-1">★</label>
+                            </div>
+                        </div>
+                        
+                        <div class="facility-item">
+                            <label>Cleanliness</label>
+                            <div class="star-rating">
+                                <input id="clean-5" type="radio" name="cleanliness-rating" value="5">
+                                <label for="clean-5">★</label>
+                                <input id="clean-4" type="radio" name="cleanliness-rating" value="4">
+                                <label for="clean-4">★</label>
+                                <input id="clean-3" type="radio" name="cleanliness-rating" value="3">
+                                <label for="clean-3">★</label>
+                                <input id="clean-2" type="radio" name="cleanliness-rating" value="2">
+                                <label for="clean-2">★</label>
+                                <input id="clean-1" type="radio" name="cleanliness-rating" value="1">
+                                <label for="clean-1">★</label>
+                            </div>
+                        </div>
+                        
+                        <div class="facility-item">
+                            <label>Staff Friendliness</label>
+                            <div class="star-rating">
+                                <input id="staff-5" type="radio" name="staff-rating" value="5">
+                                <label for="staff-5">★</label>
+                                <input id="staff-4" type="radio" name="staff-rating" value="4">
+                                <label for="staff-4">★</label>
+                                <input id="staff-3" type="radio" name="staff-rating" value="3">
+                                <label for="staff-3">★</label>
+                                <input id="staff-2" type="radio" name="staff-rating" value="2">
+                                <label for="staff-2">★</label>
+                                <input id="staff-1" type="radio" name="staff-rating" value="1">
+                                <label for="staff-1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Your Feedback (What did you like? What can we improve?)</label>
+                        <textarea id="comments" name="comments" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="suggestions">Suggestions for Improvement (Optional)</label>
+                        <textarea id="suggestions" name="suggestions"></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: center;">
+                        <input type="checkbox" id="contact-permission" name="contact-permission">
+                        <label for="contact-permission">I'm willing to be contacted for follow-up</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 Brooks Gym. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript for mobile menu and form -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Form submission
+        const feedbackForm = document.getElementById('feedbackForm');
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your valuable feedback! We appreciate your time and will use your input to improve our services.');
+                feedbackForm.reset();
+                
+                // Reset star ratings
+                document.querySelectorAll('.star-rating input').forEach(radio => {
+                    radio.checked = false;
+                });
+                
+                // Reset number ratings
+                document.querySelectorAll('.rating-option input').forEach(radio => {
+                    radio.checked = false;
+                });
+            });
+        }
+    </script>
+</body>
+</html>

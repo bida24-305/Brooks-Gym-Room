@@ -1,0 +1,215 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b6b;
+  }
+  
+  .logo span {
+    color: #fff;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6b6b;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  /* Buttons */
+  .btn,
+  .btn-submit {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+  
+  .btn:hover,
+  .btn-submit:hover {
+    background-color: #ff5252;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ff6b6b;
+  }
+  
+  /* Section Headers */
+  .services-header,
+  .feedback-header,
+  .contact-header {
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  
+  .services-header h1,
+  .feedback-header h1,
+  .contact-header h1 {
+    font-size: 3rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+  }
+  
+  .services-header p,
+  .feedback-header p,
+  .contact-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  
+    .hero-content h1,
+    .services-header h1,
+    .feedback-header h1,
+    .contact-header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .rating-circle {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .map-container {
+      height: 300px;
+    }
+  }
+  
+  /* Add all specific sections like .service-card, .feedback-form, .contact-form, etc. if needed individually */
+  
